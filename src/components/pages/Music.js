@@ -20,14 +20,9 @@ function Music() {
   };
 
   return (
-    <div>
-      <h1>Music Page</h1>
+    <div className='grid-3'>
       {state.map(show => (
-        <ResultList 
-          key={show.id}
-          name={show.name}
-          image={show.images[9].url}
-        />
+        <ResultList key={show.id} name={show.name} image={show.images[9].url} />
       ))}
     </div>
   );

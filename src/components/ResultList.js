@@ -1,9 +1,10 @@
 import React from 'react';
 
-function ResultList() {
+function ResultList({ name, image }) {
   return (
     <div>
-      <h1>Result List</h1>
+      <h4>{name}</h4>
+      <img src={image} alt='' />
     </div>
   );
 }

@@ -8,10 +8,18 @@ function Navbar() {
         <i className='fas fa-gem'>GigDig</i>
       </h1>
       <ul>
-        <li>Music</li>
-        <li>Sports</li>
-        <li>Theater</li>
-        <li>Family</li>
+        <li>
+          <i className='fas fa-music'></i>Music
+        </li>
+        <li>
+          <i className='fas fa-football-ball'></i>Sports
+        </li>
+        <li>
+          <i className='fas fa-theater-masks'></i>Theater
+        </li>
+        <li>
+          <i className='fas fa-child'></i>Family
+        </li>
       </ul>
     </div>
   );

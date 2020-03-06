@@ -1,13 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Home from './components/pages/Home';
 import './App.css';
 
 function App() {
   return (
-    <div className='App'>
-      <Navbar />
-    </div>
+    <Router>
+      <div className='App'>
+        <Navbar />
+        <Route exact path='/' component={Home} />
+      </div>
+    </Router>
   );
 }
 

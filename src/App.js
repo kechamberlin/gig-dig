@@ -15,6 +15,10 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/music' component={Music} />
+          <Route exact path='/sports' component={Sports} />
+          <Route exact path='/theater' component={Theater} />
+          <Route exact path='/family' component={Family} />
         </Switch>
       </div>
     </Router>

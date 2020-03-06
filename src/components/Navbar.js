@@ -11,16 +11,24 @@ function Navbar() {
       </h1>
       <ul>
         <li>
-          <i className='fas fa-music'></i>Music
+          <Link to='/music'>
+            <i className='fas fa-music'></i>Music
+          </Link>
         </li>
         <li>
-          <i className='fas fa-football-ball'></i>Sports
+          <Link to='/sports'>
+            <i className='fas fa-football-ball'></i>Sports
+          </Link>
         </li>
         <li>
-          <i className='fas fa-theater-masks'></i>Theater
+          <Link to='/theater'>
+            <i className='fas fa-theater-masks'></i>Theater
+          </Link>
         </li>
         <li>
-          <i className='fas fa-child'></i>Family
+          <Link to='/family'>
+            <i className='fas fa-child'></i>Family
+          </Link>
         </li>
       </ul>
     </div>

@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <div>
       <h1>
-        {/* Home page link */}
-        <i className='fas fa-gem'>GigDig</i>
+        <Link to='/'>
+          <i className='fas fa-gem'>GigDig</i>
+        </Link>
       </h1>
       <ul>
         <li>

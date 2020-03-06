@@ -22,6 +22,13 @@ function Music() {
   return (
     <div>
       <h1>Music Page</h1>
+      {state.map(show => (
+        <ResultList 
+          key={show.id}
+          name={show.name}
+          image={show.images[9].url}
+        />
+      ))}
     </div>
   );
 }

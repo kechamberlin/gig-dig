@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div>
+    <nav className="navbar bg-primary">
       <h1>
         <Link to='/'>
           <i className='fas fa-gem'>GigDig</i>
@@ -31,7 +31,7 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
 

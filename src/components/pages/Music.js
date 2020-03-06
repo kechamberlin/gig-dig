@@ -4,6 +4,10 @@ import ResultList from '../ResultList';
 function Music() {
   const [state, setState] = useState([]);
 
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div>
       <h1>Music Page</h1>

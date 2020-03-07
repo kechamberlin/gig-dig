@@ -5,10 +5,10 @@ function Music() {
   const [state, setState] = useState([]);
 
   useEffect(() => {
-    getData();
+    searchShows();
   }, []);
 
-  const getData = async () => {
+  const searchShows = async () => {
     // In a real application, the API_KEY would be an environment variable.
     const API_KEY = 'xEC8368Dovp9nNnNBhtG5kDPJ3D8NjGC';
     const response = await fetch(

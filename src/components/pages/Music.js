@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Search from '../Search';
 import ResultList from '../ResultList';
 
 function Music() {
@@ -20,10 +21,17 @@ function Music() {
   };
 
   return (
-    <div className='grid-3'>
-      {state.map(show => (
-        <ResultList key={show.id} name={show.name} image={show.images[9].url} />
-      ))}
+    <div>
+      <Search searchShows={searchShows} />
+      <div className='grid-3'>
+        {state.map(show => (
+          <ResultList
+            key={show.id}
+            name={show.name}
+            image={show.images[9].url}
+          />
+        ))}
+      </div>
     </div>
   );
 }

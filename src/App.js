@@ -6,7 +6,7 @@ import Music from './components/pages/Music';
 import Sports from './components/pages/Sports';
 import Theater from './components/pages/Theater';
 import Family from './components/pages/Family';
-import Search from './components/Search';
+// import Search from './components/Search';
 import './App.css';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className='App'>
         <Navbar />
-        <Search />
+        {/* <Search /> */}
         <div className='container'>
           <Switch>
             <Route exact path='/' component={Home} />

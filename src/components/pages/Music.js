@@ -8,11 +8,11 @@ function Music() {
     searchShows();
   }, []);
 
-  const searchShows = async () => {
+  const searchShows = async keyword => {
     // In a real application, the API_KEY would be an environment variable.
     const API_KEY = 'xEC8368Dovp9nNnNBhtG5kDPJ3D8NjGC';
     const response = await fetch(
-      `https://app.ticketmaster.com/discovery/v2/events?classificationName=music&apikey=${API_KEY}`
+      `https://app.ticketmaster.com/discovery/v2/events?classificationName=music&keyword=${keyword}&apikey=${API_KEY}`
     );
     const data = await response.json();
     console.log(data._embedded.events);

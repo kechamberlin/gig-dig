@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import Search from '../Search';
 import ResultList from '../ResultList';
+import Loading from '../Loading';
 
 function Music() {
   const [state, setState] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     searchShows();
   }, []);
 
   const searchShows = async keyword => {
+    setLoading(true);
     // In a real application, the API_KEY would be an environment variable.
     const API_KEY = 'xEC8368Dovp9nNnNBhtG5kDPJ3D8NjGC';
     const response = await fetch(
@@ -18,7 +21,12 @@ function Music() {
     const data = await response.json();
     console.log(data._embedded.events);
     setState(data._embedded.events);
+    setLoading(false);
   };
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div>

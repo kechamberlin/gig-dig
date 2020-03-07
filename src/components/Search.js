@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function Search() {
-    return (
-        <div>
-            <h1>Search Bar</h1>
-        </div>
-    )
+  const [keyword, setKeyword] = useState('');
+
+  return (
+    <div>
+      <h1>Search Bar</h1>
+    </div>
+  );
 }
 
-export default Search
+export default Search;

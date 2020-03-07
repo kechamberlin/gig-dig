@@ -1,11 +1,34 @@
 import React, { useState } from 'react';
 
-function Search() {
+function Search({ searchShows }) {
   const [keyword, setKeyword] = useState('');
+
+  const onSubmit = event => {
+    event.preventDefault();
+    searchShows(keyword);
+    setKeyword('');
+  };
+
+  const onChange = event => {
+    setKeyword(event.target.value);
+  };
 
   return (
     <div>
-      <h1>Search Bar</h1>
+      <form onSubmit={onSubmit} className='form'>
+        <input
+          onChange={onChange}
+          type='text'
+          name='keyword'
+          value={keyword}
+          placeholder='Search for an event...'
+        />
+        <input
+          type='submit'
+          value='Search'
+          className='btn btn-dark btn-block'
+        />
+      </form>
     </div>
   );
 }

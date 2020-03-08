@@ -2,7 +2,7 @@ import React from 'react';
 
 function ResultList({ name, image, venue, date, time, city }) {
   return (
-    <div className='card'>
+    <div className='card text-center'>
       <h4>{name}</h4>
       <img src={image} alt='' />
       <p>{venue}</p>

@@ -25,11 +25,6 @@ function Navbar() {
             <i className='fas fa-theater-masks'></i>Theater
           </Link>
         </li>
-        <li>
-          <Link to='/family'>
-            <i className='fas fa-child'></i>Family
-          </Link>
-        </li>
       </ul>
     </nav>
   );

@@ -5,7 +5,6 @@ import Home from './components/pages/Home';
 import Music from './components/pages/Music';
 import Sports from './components/pages/Sports';
 import Theater from './components/pages/Theater';
-import Family from './components/pages/Family';
 // import Search from './components/Search';
 import './App.css';
 
@@ -21,7 +20,6 @@ function App() {
             <Route exact path='/music' component={Music} />
             <Route exact path='/sports' component={Sports} />
             <Route exact path='/theater' component={Theater} />
-            <Route exact path='/family' component={Family} />
           </Switch>
         </div>
       </div>

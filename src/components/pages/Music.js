@@ -37,6 +37,10 @@ function Music() {
             key={show.id}
             name={show.name}
             image={show.images[9].url}
+            date={show.dates.start.localDate}
+            time={show.dates.start.localTime}
+            venue={show._embedded.venues[0].name}
+            city={show._embedded.venues[0].city.name}
           />
         ))}
       </div>

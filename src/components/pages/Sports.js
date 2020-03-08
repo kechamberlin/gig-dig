@@ -1,4 +1,7 @@
 import React from 'react';
+import Search from '../Search';
+import ResultList from '../ResultList';
+import Loading from '../Loading';
 
 function Sports() {
   return (

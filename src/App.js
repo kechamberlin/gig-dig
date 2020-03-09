@@ -7,6 +7,7 @@ import Sports from './components/pages/Sports';
 import Theater from './components/pages/Theater';
 // import Search from './components/Search';
 import NotFound from './components/pages/NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {

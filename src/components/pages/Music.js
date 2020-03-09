@@ -35,32 +35,34 @@ function Music() {
   if (loading) {
     return <Loading />;
   }
-  if (error)
+
+  if (error) {
     return (
       <div>
-        Sorry, no events have been found for your query. Please go back and try
-        again.
+        <Search searchShows={searchShows} />
+        <p>Sorry, no match</p>
       </div>
     );
-
-  return (
-    <div>
-      <Search searchShows={searchShows} />
-      <div className='grid-3'>
-        {state.map(show => (
-          <ResultList
-            key={show.id}
-            name={show.name}
-            image={show.images[9].url}
-            date={show.dates.start.localDate}
-            time={show.dates.start.localTime}
-            venue={show._embedded.venues[0].name}
-            city={show._embedded.venues[0].city.name}
-          />
-        ))}
+  } else {
+    return (
+      <div>
+        <Search searchShows={searchShows} />
+        <div className='grid-3'>
+          {state.map(show => (
+            <ResultList
+              key={show.id}
+              name={show.name}
+              image={show.images[9].url}
+              date={show.dates.start.localDate}
+              time={show.dates.start.localTime}
+              venue={show._embedded.venues[0].name}
+              city={show._embedded.venues[0].city.name}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Music;

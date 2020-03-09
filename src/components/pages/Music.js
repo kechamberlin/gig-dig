@@ -6,27 +6,42 @@ import Loading from '../Loading';
 function Music() {
   const [state, setState] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     searchShows();
   }, []);
 
   const searchShows = async keyword => {
+    setError(false);
     setLoading(true);
-    // In a real application, the API_KEY would be an environment variable.
-    const API_KEY = 'xEC8368Dovp9nNnNBhtG5kDPJ3D8NjGC';
-    const response = await fetch(
-      `https://app.ticketmaster.com/discovery/v2/events?classificationName=music&keyword=${keyword}&apikey=${API_KEY}`
-    );
-    const data = await response.json();
-    console.log(data._embedded.events);
-    setState(data._embedded.events);
+
+    try {
+      // In a real application, the API_KEY would be an environment variable.
+      const API_KEY = 'xEC8368Dovp9nNnNBhtG5kDPJ3D8NjGC';
+      const response = await fetch(
+        `https://app.ticketmaster.com/discovery/v2/events?classificationName=music&keyword=${keyword}&apikey=${API_KEY}`
+      );
+      const data = await response.json();
+      console.log(data._embedded.events);
+      setState(data._embedded.events);
+    } catch (error) {
+      setError(true);
+      console.log(error);
+    }
     setLoading(false);
   };
 
   if (loading) {
     return <Loading />;
   }
+  if (error)
+    return (
+      <div>
+        Sorry, no events have been found for your query. Please go back and try
+        again.
+      </div>
+    );
 
   return (
     <div>

@@ -47,7 +47,7 @@ function Theater() {
     return (
       <div>
         <Search searchShows={searchShows} />
-        <div className='grid-3'>
+        <div className='grid-3 container'>
           {state.map(show => (
             <ResultList
               key={show.id}

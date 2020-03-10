@@ -17,7 +17,7 @@ function ResultList({ name, image, venue, date, time, city }) {
       <p>{date}</p>
       <p>{time}</p>
       <p>{city}</p>
-      <button className="btn-dark btn-block" onClick={handleClick} type='button'>
+      <button className="btn btn-dark btn-block" onClick={handleClick} type='button'>
         I'm Interested!
       </button>
       {submitResult && <p>{submitResult}</p>}

@@ -46,7 +46,9 @@ function Theater() {
   } else {
     return (
       <div>
-        <Search searchShows={searchShows} />
+        <div className='theater-jumbotron'>
+          <Search searchShows={searchShows} />
+        </div>
         <div className='grid-3 container'>
           {state.map(show => (
             <ResultList

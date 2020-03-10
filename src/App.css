@@ -8,6 +8,22 @@
   padding-top: 10vh;
 }
 
+.sports-jumbotron {
+  background-image: url(./components/images/sports-jumbotron.jpg);
+  background-size: 100% 100%;
+  margin: auto;
+  height: 75vh;
+  padding-top: 10vh;
+}
+
+.theater-jumbotron {
+  background-image: url(./components/images/theater-jumbotron.jpg);
+  background-size: 100% 100%;
+  margin: auto;
+  height: 75vh;
+  padding-top: 10vh;
+}
+
 /* Global Styles */
 :root {
   --primary-color: #dc3545;
@@ -391,14 +407,10 @@ table th {
 
 /* Mobile Styles */
 @media (max-width: 700px) {
-  .music-jumbotron{
-    max-height: 40vh;
-  }
-
-  input[type="text"],
-  input[type="submit"] {
-    font-size: 10%;
-    /* padding: 0; */
+  input[type='text'],
+  input[type='submit'] {
+    font-size: 0.8rem;
+    padding: 0;
   }
 
   .hide-sm {

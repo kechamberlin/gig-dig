@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.item-image {
+  height: 150px;
+}
+
 .music-jumbotron {
   background-image: url(./components/images/music-jumbotron.jpg);
   background-size: 100% 100%;
@@ -354,15 +358,24 @@ textarea {
   width: 50%;
   padding: 0.4rem;
   font-size: 1.2rem;
-  border: 1px solid #ccc;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
   margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: silver;
 }
 
 input[type='submit'],
 button {
   font: inherit;
-  width: 50%;
+  width: 45%;
   margin: auto;
+  border-radius: 0 0 10px 10px;
 }
 
 table th,

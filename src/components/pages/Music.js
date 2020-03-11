@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Search from '../Search';
 import ResultList from '../ResultList';
-// import LoadMoreButton from "../LoadMoreButton";
 import Loading from '../Loading';
 
 function Music() {
@@ -33,15 +32,6 @@ function Music() {
     setLoading(false);
   };
 
-  // const loadMoreMovies = () => {
-  //  const searchEndPoint = `${SEARCH_BASE_URL}${searchTerm}&page=${state.currentPage + 1}`;
-  //  const popularEndPoint = `${POPULAR_BASE_URL}&page=${state.currentPage + 1}`;
-
-  //  const endpoint = searchTerm ? searchEndPoint : popularEndPoint;
-
-  //  fetchMovies(endpoint);
-  // }
-
   if (loading) {
     return <Loading />;
   }
@@ -72,12 +62,6 @@ function Music() {
             />
           ))}
         </div>
-        {/* {state.currentPage < state.totalPages && !loading && (
-          <LoadMoreButton
-            text="Load More"
-            callback={loadMoreMovies}
-          />
-        )} */}
       </div>
     );
   }

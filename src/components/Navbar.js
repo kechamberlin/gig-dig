@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar bg-primary">
       <h1>
         <Link to='/'>
-          <i className='fas fa-gem'>GigDig</i>
+        Gig<i className='fas fa-check-double'>Dig</i>
         </Link>
       </h1>
       <ul>

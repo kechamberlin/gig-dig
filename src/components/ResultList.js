@@ -12,12 +12,16 @@ function ResultList({ name, image, venue, date, time, city }) {
   return (
     <div className='card text-center'>
       <h4>{name}</h4>
-      <img src={image} alt='' />
+      <img src={image} alt='' className='item-image' />
       <p>{venue}</p>
       <p>{date}</p>
       <p>{time}</p>
       <p>{city}</p>
-      <button className="btn btn-dark btn-block" onClick={handleClick} type='button'>
+      <button
+        className='btn btn-dark btn-block'
+        onClick={handleClick}
+        type='button'
+      >
         I'm Interested!
       </button>
       {submitResult && <p>{submitResult}</p>}

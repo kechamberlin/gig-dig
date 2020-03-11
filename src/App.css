@@ -141,8 +141,8 @@ img {
 
 /* Cards */
 .card {
-  padding: 1rem;
-  border: #ccc 1px dotted;
+  border: 3px groove #ccc;
+  border-radius: 13px;
   margin: 0.7rem 0;
 }
 
@@ -208,21 +208,9 @@ img {
 }
 
 /* Grid */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-}
-
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-}
-
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
 

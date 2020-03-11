@@ -20,7 +20,7 @@ function Sports() {
       // In a real application, the API_KEY would be an environment variable.
       const API_KEY = 'xEC8368Dovp9nNnNBhtG5kDPJ3D8NjGC';
       const response = await fetch(
-        `https://app.ticketmaster.com/discovery/v2/events?classificationName=sports&keyword=${keyword}&apikey=${API_KEY}`
+        `https://app.ticketmaster.com/discovery/v2/events?classificationName=sports&keyword=${keyword}&size=15&apikey=${API_KEY}`
       );
       const data = await response.json();
       console.log(data._embedded.events);

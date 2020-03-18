@@ -9,7 +9,7 @@ function Loading() {
         alt='Loading...'
         style={{ width: '200px', margin: 'auto', display: 'block' }}
       />
-      <p>Loading...</p>
+      <h1>Loading...</h1>
     </div>
   );
 }

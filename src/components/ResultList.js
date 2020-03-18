@@ -15,25 +15,25 @@ function ResultList({ name, image, venue, date, time, city }) {
       <img src={image} alt='' className='item-image' />
       <p>
         <strong>
-          <u>Venue</u>
+          <u>VENUE</u>
         </strong>
         : {venue}
       </p>
       <p>
         <strong>
-          <u>When</u>
+          <u>WHEN</u>
         </strong>
         : {date}
       </p>
       <p>
         <strong>
-          <u>Time</u>
+          <u>TIME</u>
         </strong>
         : {time}
       </p>
       <p>
         <strong>
-          <u>Location</u>
+          <u>LOCATION</u>
         </strong>
         : {city}
       </p>

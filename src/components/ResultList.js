@@ -44,7 +44,7 @@ function ResultList({ name, image, venue, date, time, city }) {
       >
         I'm Interested!
       </button>
-      {submitResult && <p>{submitResult}</p>}
+      {submitResult && <h3>{submitResult}</h3>}
     </div>
   );
 }

@@ -3,26 +3,26 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar bg-primary">
+    <nav className='navbar bg-primary'>
       <h1>
         <Link to='/'>
-        Gig<i className='fas fa-check-double'>Dig</i>
+          <i className='fas fa-check-double'>GigDig</i>
         </Link>
       </h1>
       <ul>
         <li>
           <Link to='/music'>
-            <i className='fas fa-music'></i>Music
+            <i className='fas fa-music'></i> Music
           </Link>
         </li>
         <li>
           <Link to='/sports'>
-            <i className='fas fa-football-ball'></i>Sports
+            <i className='fas fa-football-ball'></i> Sports
           </Link>
         </li>
         <li>
           <Link to='/theater'>
-            <i className='fas fa-theater-masks'></i>Theater
+            <i className='fas fa-theater-masks'></i> Theater
           </Link>
         </li>
       </ul>

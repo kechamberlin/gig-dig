@@ -11,12 +11,32 @@ function ResultList({ name, image, venue, date, time, city }) {
 
   return (
     <div className='card text-center'>
-      <h4>{name}</h4>
+      <h2 className='card-header'>{name}</h2>
       <img src={image} alt='' className='item-image' />
-      <p>{venue}</p>
-      <p>{date}</p>
-      <p>{time}</p>
-      <p>{city}</p>
+      <p>
+        <strong>
+          <u>Venue</u>
+        </strong>
+        : {venue}
+      </p>
+      <p>
+        <strong>
+          <u>When</u>
+        </strong>
+        : {date}
+      </p>
+      <p>
+        <strong>
+          <u>Time</u>
+        </strong>
+        : {time}
+      </p>
+      <p>
+        <strong>
+          <u>Location</u>
+        </strong>
+        : {city}
+      </p>
       <button
         className='btn btn-dark btn-block'
         onClick={handleClick}

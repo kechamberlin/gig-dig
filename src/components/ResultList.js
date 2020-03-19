@@ -10,9 +10,9 @@ function ResultList({ name, image, venue, date, time, city }) {
   };
 
   return (
-    <div className='card text-center'>
+    <div className='card'>
       <h2 className='card-header'>{name}</h2>
-      <img src={image} alt='' className='item-image' />
+      <img className='item-image' src={image} alt='' />
       <p>
         <strong>
           <u>VENUE</u>

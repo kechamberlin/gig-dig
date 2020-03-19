@@ -15,7 +15,7 @@ function Search({ searchShows }) {
 
   return (
     <div>
-      <form onSubmit={onSubmit} className='form'>
+      <form onSubmit={onSubmit}>
         <input
           onChange={onChange}
           type='text'

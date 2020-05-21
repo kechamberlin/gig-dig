@@ -5,7 +5,6 @@ import Home from './components/pages/Home';
 import Music from './components/pages/Music';
 import Sports from './components/pages/Sports';
 import Theater from './components/pages/Theater';
-// import Search from './components/Search';
 import NotFound from './components/pages/NotFound';
 import './App.css';
 
@@ -14,7 +13,6 @@ function App() {
     <Router>
       <div className='App'>
         <Navbar />
-        {/* <Search /> */}
         <div>
           <Switch>
             <Route exact path='/' component={Home} />

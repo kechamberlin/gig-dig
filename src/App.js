@@ -15,10 +15,10 @@ function App() {
         <Navbar />
         <div>
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/music' component={Music} />
-            <Route exact path='/sports' component={Sports} />
-            <Route exact path='/theater' component={Theater} />
+            <Route exact path='https://kechamberlin.github.io/gig-dig/' component={Home} />
+            <Route exact path='https://kechamberlin.github.io/gig-dig/music' component={Music} />
+            <Route exact path='https://kechamberlin.github.io/gig-dig/sports' component={Sports} />
+            <Route exact path='https://kechamberlin.github.io/gig-dig/theater' component={Theater} />
             <Route component={NotFound} />
           </Switch>
         </div>

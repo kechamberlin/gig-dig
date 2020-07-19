@@ -8,7 +8,7 @@ GigDig was born out of my love for music and attending shows of my favorite band
 
 **NOTE:  There are two minor issues I will soon fix in this project:**
 - Upon first entering the application, the user may come across a "Not Found" error page.  To get around this, simply click the "GigDig" logo in the navigation bar, and the user should be redirected to the Home page.  Clicking the 3 category tabs should also work.  Manually reloading the page may cause the application to crash.
-- Although this website was designed for mobile responsiveness, it is best viewed on a desktop browser.  The Jumbotron images may look distorted.**
+- Although this website was designed for mobile responsiveness, it is best viewed on a desktop browser.  The Jumbotron images may look distorted.
 
 ## **How It Works**
 
